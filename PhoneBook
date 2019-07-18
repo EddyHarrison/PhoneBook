@@ -145,20 +145,20 @@ namespace PhoneBook
                 }
                 else if (str == "Телефон")
                 {
-                    Console.WriteLine("Введите новый номер телефона: ");
-                    while (Phone == 0)
-                    {
-                        Console.WriteLine("Введите номер телефона: ");
-                        str = Console.ReadLine();
-                        if (Numeric(str))
-                        {
-                            book.ElementAt(q).Value.Phone = Convert.ToInt64(Phone);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Вы ввели не цифры");
-                        }
-                    }
+                            Console.WriteLine("Введите новый номер телефона: ");
+                            while (Phone == 0)
+                            {
+
+                                str = Console.ReadLine();
+                                if (Numeric(str))
+                                {
+                                    Phone = Convert.ToInt64(str);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Вы ввели не цифры");
+                                }
+                            }
 
                     Console.WriteLine("Редактирование прошло успешно");
                 }
