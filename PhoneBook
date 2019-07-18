@@ -114,7 +114,7 @@ namespace PhoneBook
                 int q = int.Parse(Console.ReadLine());
                 string str = "";
                 NoteBook sr = new NoteBook();
-                Console.WriteLine("Введите то,что хотите поменять: Фамилия, Имя, Отчество, Телефон, Страна, Дата рождения, Организация, Должность, Прочие заметки. ");
+                Console.WriteLine("Введите то,что хотите поменять:\nФамилия \nИмя \nОтчество \nТелефон \nСтрана \nДата рождения \nОрганизация \nДолжность \nПрочие заметки ");
                 str = Console.ReadLine();
                 sr.Operation(str);
 
